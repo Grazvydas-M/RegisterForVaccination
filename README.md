@@ -3,10 +3,11 @@
 This is a sample application for using from CLI.
 
 Running Locally:
-
-git clone https://github.com/Grazvydas-M/RegisterForVaccination.git;
-cd visma;
-php index.php;
+```
+git clone https://github.com/Grazvydas-M/RegisterForVaccination.git
+cd visma
+php index.php
+```
 
 Here You can choose few options:
 ```
