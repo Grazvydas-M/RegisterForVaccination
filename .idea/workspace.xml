@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617d2565-12dc-43af-9bfe-3a58dcae0e0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +58,30 @@
       <workItem from="1636433785072" duration="291000" />
       <workItem from="1636434124933" duration="16856000" />
       <workItem from="1636454763009" duration="302000" />
-      <workItem from="1636455106014" duration="625000" />
+      <workItem from="1636455106014" duration="1073000" />
     </task>
+    <task id="LOCAL-00001" summary="Readme">
+      <created>1636455750694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636455750695</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1636455749882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1636455749882" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636282801364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -81,6 +96,10 @@
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1636035454617" />
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1636283667435" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636455755640">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1636455755640" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1636450028427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
