@@ -212,8 +212,9 @@ class User
                 $this->writePhone($fileLine, $isValid);
             }
 
+
         }
-        $fileLine[3] = $answ;
+        $fileLine[3];
         $isValid = true;
     }
 
@@ -232,7 +233,7 @@ class User
             }
 
         }
-        $fileLine[4] = $answ;
+        $fileLine[4] ;
         $isValid = true;
     }
 
