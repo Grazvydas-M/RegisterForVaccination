@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617d2565-12dc-43af-9bfe-3a58dcae0e0e" name="Default Changelist" comment="" />
+    <list default="true" id="617d2565-12dc-43af-9bfe-3a58dcae0e0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20SQCq8DJqxM3g5SU6xUoKmbV22" />
   <component name="ProjectViewState">
@@ -51,7 +57,9 @@
       <workItem from="1636360271665" duration="301000" />
       <workItem from="1636361650690" duration="31272000" />
       <workItem from="1636433785072" duration="291000" />
-      <workItem from="1636434124933" duration="16202000" />
+      <workItem from="1636434124933" duration="16856000" />
+      <workItem from="1636454763009" duration="302000" />
+      <workItem from="1636455106014" duration="625000" />
     </task>
     <servers />
   </component>
