@@ -48,14 +48,14 @@ class User
 
         $validationErrors = $this->validator->validate($userData);
         $killExecution = false;
-        foreach ($validationErrors as $error){
-            if(is_string($error)){
+        foreach ($validationErrors as $error) {
+            if (is_string($error)) {
                 $killExecution = true;
                 echo $error . PHP_EOL;
             }
 
         }
-        if($killExecution === true){
+        if ($killExecution === true) {
             return $this->create();
         }
 
@@ -63,11 +63,6 @@ class User
         fputcsv($file, $userData);
         fclose($file);
 
-        $readFile = fopen('data.csv', 'r');
-        while (($line = fgetcsv($readFile, 1000, ',')) !== false) {
-            $num = count($line);
-//            var_dump($line, $num);
-        }
 
     }
 
@@ -109,7 +104,6 @@ class User
         fclose($data);
         rename('temp_table.csv', 'data.csv');
     }
-
 
 
     public function delete()
@@ -162,79 +156,64 @@ class User
         return $format;
     }
 
-    private function writeName(&$fileLine, &$isValid = false)
+    private function writeName(&$fileLine)
     {
-        if ($isValid) {
-            return;
-        }
+
         $this->descriptions->printDescription('edit_name');
         $handle = fopen("php://stdin", "r");
         $answ = trim(fgets($handle));
         if ($answ !== '') {
             if (!$this->validator->validateName($answ)) {
                 $this->descriptions->printDescription('not_valid');
-                $this->writeName($fileLine, $isValid);
+                $this->writeName($fileLine);
             }
             $fileLine[1] = $answ;
-            $isValid = true;
         }
     }
 
-    private function writeEmail(&$fileLine, &$isValid = false)
+    private function writeEmail(&$fileLine)
     {
-        if ($isValid) {
-            return;
-        }
+
         $this->descriptions->printDescription('edit_email');
         $handle = fopen("php://stdin", "r");
         $answ = trim(fgets($handle));
         if ($answ !== '') {
             if (!$this->validator->validateEmail($answ)) {
                 $this->descriptions->printDescription('not_valid');
-                $this->writeEmail($fileLine, $isValid);
+                $this->writeEmail($fileLine);
             }
             $fileLine[2] = $answ;
-            $isValid = true;
         }
     }
 
-    private function writePhone(&$fileLine, &$isValid = false)
+    private function writePhone(&$fileLine)
     {
-        if ($isValid) {
-            return;
-        }
         $this->descriptions->printDescription('edit_phone');
         $handle = fopen("php://stdin", "r");
         $answ = trim(fgets($handle));
         if ($answ !== '') {
             if (!$this->validator->validatePhoneNumber($answ)) {
                 $this->descriptions->printDescription('not_valid');
-                $this->writePhone($fileLine, $isValid);
+                $this->writePhone($fileLine);
             }
-
-
+            $fileLine[3] = $answ;
         }
-        $fileLine[3];
-        $isValid = true;
+
     }
 
-    private function writePersonalCode(&$fileLine, &$isValid = false)
+    private function writePersonalCode(&$fileLine)
     {
-        if ($isValid) {
-            return;
-        }
         $this->descriptions->printDescription('edit_personal_code');
         $handle = fopen("php://stdin", "r");
         $answ = trim(fgets($handle));
         if ($answ !== '') {
             if ($this->validator->validatePersonalCode($answ)) {
                 $this->descriptions->printDescription('not_valid');
-                $this->writePersonalCode($fileLine, $isValid);
+                $this->writePersonalCode($fileLine);
             }
-
+            $fileLine[4] = $answ;
         }
-        $fileLine[4] ;
-        $isValid = true;
+
     }
 
     private function writeDate($fileLine)
